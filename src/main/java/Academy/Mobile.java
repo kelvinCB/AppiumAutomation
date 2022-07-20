@@ -28,16 +28,14 @@ public class Mobile {
 		
 		//Configure Automation Capabilities
 		UiAutomator2Options options = new UiAutomator2Options();
-		options.setDeviceName(prop.getProperty("device_name"));
+		options.setDeviceName(prop.getProperty("deviceName"));
 		options.setApp(prop.getProperty("app"));
 		
 		//Start Android Driver with Capabilites configured
 		driver = new AndroidDriver(options);
 		
 		return driver;
-		
-		//Now, you can start your automation
-		
+	
 
 	}
 	
